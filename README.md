@@ -196,5 +196,6 @@ Open `index.html` in a browser.
 ## 👩‍💻 Author
 
 **Avilipsa Mahapatra**
+
 School of Computer Engineering
 Kalinga Institute of Industrial Technology
