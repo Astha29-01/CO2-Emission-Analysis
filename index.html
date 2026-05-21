@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CO2 Emission Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌍 CO2 Emission Analysis using ML</h1>
+
+        <!-- ORIGINAL GRAPH -->
+        <div class="card">
+            <h2>📈 Overall CO2 Emission Graph</h2>
+            <img src="co2_graph.png" alt="CO2 Graph">
+        </div>
+
+        <!-- MODEL GRAPHS -->
+        <div class="card">
+            <h2>🤖 Model Predictions</h2>
+
+            <div class="graph-container">
+
+                <div class="graph-box">
+                    <h3>Linear Regression</h3>
+                    <img src="lr_graph.png" alt="LR Graph">
+                </div>
+
+                <div class="graph-box">
+                    <h3>Decision Tree</h3>
+                    <img src="dt_graph.png" alt="DT Graph">
+                </div>
+
+                <div class="graph-box">
+                    <h3>Random Forest</h3>
+                    <img src="rf_graph.png" alt="RF Graph">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📊 Model Comparison (MSE)</h2>
+            <img src="model_comparision_graph.png" alt="Model Comparison Graph">
+        </div>
+
+        <!-- COMPARISON TABLE -->
+        <div class="card">
+            <h2>📊 Algorithm Comparison</h2>
+
+            <table>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>MSE ↓</th>
+                    <th>RMSE ↓</th>
+                    <th>R² ↑</th>
+                </tr>
+
+                <tr>
+                    <td>Linear Regression</td>
+                    <td>410.68</td>
+                    <td>20.27</td>
+                    <td>0.883</td>
+                </tr>
+
+                <tr>
+                    <td>Decision Tree</td>
+                    <td>158.64</td>
+                    <td>12.60</td>
+                    <td>0.955</td>
+                </tr>
+
+                <tr class="best">
+                    <td>Random Forest</td>
+                    <td>155.00</td>
+                    <td>12.45</td>
+                    <td>0.956</td>
+                </tr>
+
+            </table>
+
+            <button onclick="showBest()">Find Best Model</button>
+            <p id="result"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
